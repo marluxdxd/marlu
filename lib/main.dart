@@ -413,7 +413,7 @@ class ExperienceSection extends StatelessWidget {
         SizedBox(height: 22),
         TimelineItem(
           period: 'May 2023 - Current',
-          title: 'Technical Support Staff',
+          title: 'Section IT Head',
           company: 'Mactan Doctors Hospital Inc.',
           points: [
             'Oversee IT operations and supervise two IT staff for efficient service delivery.',
