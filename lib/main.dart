@@ -250,6 +250,10 @@ class _ProfilePanel extends StatelessWidget {
             text: 'marluaenriquez@gmail.com',
           ),
           const _FactRow(
+            icon: Icons.alternate_email,
+            text: 'marluxdxd@gmail.com',
+          ),
+          const _FactRow(
             icon: Icons.location_on_outlined,
             text: 'Cebu, Cebu 6000',
           ),
