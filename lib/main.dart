@@ -235,7 +235,7 @@ class _ProfilePanel extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
             child: AspectRatio(
-              aspectRatio: 4 / 3,
+              aspectRatio: 4 / 3.5,
               child: Image.asset(
                 'assets/images/marlu-profile.jpeg',
                 fit: BoxFit.cover,
