@@ -255,7 +255,7 @@ class _ProfilePanel extends StatelessWidget {
           ),
           const _FactRow(
             icon: Icons.location_on_outlined,
-            text: 'Cebu, Cebu 6000',
+            text: 'Cebu City, Cebu 6000',
           ),
         ],
       ),
