@@ -249,7 +249,7 @@ class _ProfilePanel extends StatelessWidget {
             icon: Icons.alternate_email,
             text: 'marluaenriquez@gmail.com / marluxdxd@gmail.com',
           ),
-      
+
           const _FactRow(
             icon: Icons.location_on_outlined,
             text: 'Cebu City, Cebu 6000',
@@ -459,20 +459,22 @@ class EducationSection extends StatelessWidget {
         Wrap(
           spacing: 18,
           runSpacing: 18,
-          children: const [
+          children: [
             InfoTile(
               icon: Icons.school_outlined,
               title: 'BS Information Communication Technology',
               detail:
                   'Cebu Technological University, Major in Programming, 2019',
+              action: TextButton(onPressed: () {}, child: const Text('View')),
             ),
             InfoTile(
               icon: Icons.workspace_premium_outlined,
               title: 'Certifications',
               detail:
                   'Leadership and Management Skills, Electronic Drug Price Monitoring System 3.0 and 4.0',
+              action: TextButton(onPressed: () {}, child: const Text('View')),
             ),
-            InfoTile(
+            const InfoTile(
               icon: Icons.translate,
               title: 'Languages',
               detail: 'English, Tagalog, Bisaya',
@@ -749,11 +751,13 @@ class InfoTile extends StatelessWidget {
     required this.icon,
     required this.title,
     required this.detail,
+    this.action,
   });
 
   final IconData icon;
   final String title;
   final String detail;
+  final Widget? action;
 
   @override
   Widget build(BuildContext context) {
@@ -769,7 +773,13 @@ class InfoTile extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(icon, color: _teal, size: 30),
+          Row(
+            children: [
+              Icon(icon, color: _teal, size: 30),
+              const Spacer(),
+              ?action,
+            ],
+          ),
           const SizedBox(height: 14),
           Text(title, style: Theme.of(context).textTheme.titleMedium),
           const SizedBox(height: 8),
