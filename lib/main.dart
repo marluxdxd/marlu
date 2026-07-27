@@ -247,12 +247,9 @@ class _ProfilePanel extends StatelessWidget {
           const _FactRow(icon: Icons.phone_android, text: '+63 931 919 9484'),
           const _FactRow(
             icon: Icons.alternate_email,
-            text: 'marluaenriquez@gmail.com',
+            text: 'marluaenriquez@gmail.com / marluxdxd@gmail.com',
           ),
-          const _FactRow(
-            icon: Icons.alternate_email,
-            text: 'marluxdxd@gmail.com',
-          ),
+      
           const _FactRow(
             icon: Icons.location_on_outlined,
             text: 'Cebu City, Cebu 6000',
